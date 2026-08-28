@@ -1,19 +1,42 @@
-footer div{
+footer #main{
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.7);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10PX;
 }
 
 footer #start{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
     color: whitesmoke;
 }
 
+footer .divider {
+    width: 95%;
+    height: 1px;
+    margin: 10px auto;
+    background-color: whitesmoke;
+}
+
 footer #disclaimer{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font: normal 10pt Arial;
     color: whitesmoke;
+}
+
+footer #logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 100px;
+}
+
+footer #logos img{
+    width: 75px;
+    height: auto;
 }
 
 footer #disclaimer a{

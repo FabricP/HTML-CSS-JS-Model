@@ -4,10 +4,8 @@ header{
     z-index: 1000;      /* Profundidade de exibição do "header" (tipo camadas do PhotoShop [maior = frente]) */
 }
 
-header div{                                 /* Modifica a parte "div" do "header" */
+header #main{                               /* Modifica a parte "main" do "header" */
     display: flex;                          /* Tipo de layout ([flex = flexbox] atributo que facilita a organização dos elementos filhos) */
-    min-height: 30px;                       /* Altura minima do "header" */
-    min-width: 500px;                       /* Largura minima do "header" */
     align-items: center;                    /* Alinhamento vertical dos elementos filhos */
     border-radius: 10px;                    /* Arredondamento da borda */
     padding: 0px 30px;                      /* Margem interna (vertical | horizontal) */
@@ -22,7 +20,6 @@ header div img{             /* Modifica a parte "img" da "div" do "header" */
 }
 
 header div h1{              /* Modifica a parte "h1" da "div" do "header" */
-    text-align: center;     /* Alinhamento horizontal do texto */
     font: bold 20pt Arial;  /* Estilo do texto (tipo | tamanho [pt = points ~1,33px] | fonte) */
     padding: 0px 20px;      /* Margem interna */
     
