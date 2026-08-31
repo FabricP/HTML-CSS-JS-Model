@@ -1,45 +1,58 @@
-footer #main{
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10PX;
+footer #main{                                   /* Modifica a parte "main" do "footer" */
+    display: flex;                              /* Tipo de layout */
+    flex-direction: column;                     /* Muda o organização dos elementos filhos [column = vertical / row = horizontal] */
+    background-color: rgba(0, 0, 0, 0.7);     /* Cor de fundo */
+    border-radius: 10px;                        /* Arredondamento da borda */
 }
 
-footer #start{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    color: whitesmoke;
+footer #links{                  /* Modifica a parte "links" do "footer" */
+    display: flex;              /* Tipo de layout */
+    justify-content: center;    /* Alinhamento horizontal dos elementos filhos */
+    gap: 100px;                 /* Espaço entre os elementos filhos */
+
 }
 
-footer .divider {
-    width: 95%;
-    height: 1px;
-    margin: 10px auto;
-    background-color: whitesmoke;
+footer .link-column a{          /* Modifica a parte "a" da "link-column" do "footer" */
+    text-align: center;         /* Alinhamento do texto */
+    color: whitesmoke;        /* Cor do texto */
+    font: normal 12pt Arial;    /* Estilo do texto */
+    text-decoration: none;      /* Revome o sublinhado de link */
 }
 
-footer #disclaimer{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    font: normal 10pt Arial;
-    color: whitesmoke;
+footer .link-column h1{     /* Modifica a parte "h1" da "link-column" do "footer" */
+    text-align: center;     /* Alinhamento do texto */
+    color: whitesmoke;    /* Cor do texto */
+    font: bold 12pt Arial;  /* Estilo do texto */
 }
 
-footer #logos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 100px;
+footer .divider{                        /* Modifica a parte "divider" do "footer" */
+    width: 95%;                         /* Largura da "div" */
+    height: 1px;                        /* Altura da "div" */
+    margin: 10px auto;                  /* Margem externa da "div" */
+    background-color: whitesmoke;     /* Cor de fundo */
 }
 
-footer #logos img{
-    width: 75px;
-    height: auto;
+footer #disclaimer{             /* Modifica a parte "disclaimer" do "footer" */
+    display: flex;              /* Tipo de layout */
+    align-items: center;        /* Alinhamento vertical dos elementos filhos */
+    padding: 10px;              /* Margem interna */
+    font: normal 10pt Arial;    /* Estilo do texto */
+    color: whitesmoke;        /* Cor do texto */
 }
 
-footer #disclaimer a{
-    text-decoration: none;
-    color: whitesmoke;
+footer #logos{                  /* Modifica a parte "logos" do "footer" */
+    display: flex;              /* Tipo de layout */
+    flex-wrap: wrap;            /* Faz os elementos da "div" descerem quando a tela ficar menor */
+    justify-content: center;    /* Alinhamento horizontal dos elementos filhos */
+    column-gap: 100px;          /* Espaço entre colunas dos elementos filhos */
+}
+
+footer #logos img{  /* Modifica a parte "img" do "logos" do "footer" */
+    width: 75px;    /* Largura da "img" */
+    height: auto;   /* Altura da "img" */
+}
+
+footer #disclaimer a{       /* Modifica a parte "a" do "disclaimer" do "footer" */
+    text-decoration: none;  /* Revome o sublinhado de link */
+    color: whitesmoke;    /* Cor do texto */
 }
