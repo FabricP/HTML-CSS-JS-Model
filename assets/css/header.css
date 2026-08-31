@@ -37,3 +37,20 @@ header div nav a{           /* Modifica a parte "a" da "nav" da "div" do"header"
     font: bold 15pt Arial;  /* Estilo do texto */
     color: whitesmoke;    /* Cor do texto */          
 }
+
+/* Teste de menu flutuante */
+header #test-menu{
+    display: none;
+    margin-left: auto;
+    background-color: whitesmoke;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+header div nav a{
+    cursor: pointer;
+}
