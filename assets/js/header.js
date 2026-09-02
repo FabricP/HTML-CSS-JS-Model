@@ -5,6 +5,17 @@ async function loadComponents(element, file){                                   
 loadComponents('header-placeholder', '/components/header.html')
 
 /* Teste de menu flutuante */
-function showmenu(element, status){
+let visible
+function showmenu(element){
+    if (visible == true){
+        window.document.getElementById(element).style = 'display: none;'
+        visible = false
+    } else{
+        window.document.getElementById(element).style = 'display: flex;'
+        visible = true
+    }
+}
+
+function mouseover(element, status){
     window.document.getElementById(element).style = status
 }
