@@ -36,21 +36,22 @@ header div nav a{           /* Modifica a parte "a" da "nav" da "div" do"header"
     text-decoration: none;  /* Revome o sublinhado de link */
     font: bold 15pt Arial;  /* Estilo do texto */
     color: whitesmoke;    /* Cor do texto */          
+    cursor: pointer;        /* Estilo do ponteiro do mouse */
 }
 
-/* Teste de menu flutuante */
-header #test-menu{
-    display: none;
-    margin-left: auto;
-    background-color: whitesmoke;
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+nav .dropdown{          /* Modifica a parte ".dropdown" da "nav" do "header" */
+    position: relative; /* Permite controlar a posição e serve de referência para elementos filhos absolute */
 }
 
-header div nav a{
-    cursor: pointer;
+nav .submenu {                                  /* Modifica a parte ".submenu" da "nav" do "header" */
+    display: none;                              /* Tipo de layout ([none = nenhum] atributo que oculta o elemento) */
+    position: absolute;                         /* Permite posicionar o elemento livremente em relação ao elemento pai relative */
+    top: 200%;                                  /* Distancia superior [100% = toda a area verical do elemento pai relative] */
+    right: 0;                                   /* Distancia horizontal direita */
+    background-color: rgba(0, 0, 0, 0.7);     /* Cor de fundo */
+    width: 200px;                               /* Largura do ".submenu" */
+    height: 200px;                              /* Altura do ".submenu" */
+    border-radius: 10px;                        /* Arredondamento da borda */
+    justify-content: center;                    /* Alinhamento horizontal dos elementos filhos */
+    align-items: center;                        /* Alinhamento vertical dos elementos filhos */
 }

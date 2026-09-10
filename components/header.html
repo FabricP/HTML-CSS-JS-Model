@@ -6,12 +6,20 @@
     <nav>
         <a href="">OPÇÃO 1</a> 
         | 
-        <a href="">OPÇÃO 2</a> 
-        | 
-        <a onclick="showmenu('test-menu')">OPÇÃO 3</a>
-    </nav>
-</div>
+        <div class="dropdown">
+            <a onclick="showMenu('submenu-placeholder1')">OPÇÃO 2</a>
 
-<div id="test-menu">
-    <h1>Hello World!</h1>
+            <div class="submenu" id="submenu-placeholder1">
+                <h1>Hello World!</h1>
+            </div>
+        </div>
+        | 
+        <div class="dropdown">
+            <a onclick="showMenu('submenu-placeholder2')">OPÇÃO 3</a>
+
+            <div class="submenu" id="submenu-placeholder2">
+                <h1>Hello World!</h1>
+            </div>
+        </div>
+    </nav>
 </div>
