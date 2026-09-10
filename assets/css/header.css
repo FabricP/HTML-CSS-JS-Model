@@ -39,19 +39,27 @@ header div nav a{           /* Modifica a parte "a" da "nav" da "div" do"header"
     cursor: pointer;        /* Estilo do ponteiro do mouse */
 }
 
+header .divider{
+    width: 1px;                         /* Largura da "div" */
+    height: auto;                       /* Altura da "div" */
+    background-color: whitesmoke;     /* Cor de fundo */
+}
+
 nav .dropdown{          /* Modifica a parte ".dropdown" da "nav" do "header" */
     position: relative; /* Permite controlar a posição e serve de referência para elementos filhos absolute */
 }
 
 nav .submenu {                                  /* Modifica a parte ".submenu" da "nav" do "header" */
     display: none;                              /* Tipo de layout ([none = nenhum] atributo que oculta o elemento) */
+    flex-direction: column;                     /* Organização dos elementos filhos [column = vertical / row = horizontal] */
     position: absolute;                         /* Permite posicionar o elemento livremente em relação ao elemento pai relative */
     top: 200%;                                  /* Distancia superior [100% = toda a area verical do elemento pai relative] */
-    right: 0;                                   /* Distancia horizontal direita */
+    right: 0;                                   /* Distancia horizontal direita em relação ao lado direito do elemento pai relative */
     background-color: rgba(0, 0, 0, 0.7);     /* Cor de fundo */
     width: 200px;                               /* Largura do ".submenu" */
-    height: 200px;                              /* Altura do ".submenu" */
+    height: auto;                               /* Altura do ".submenu" */
     border-radius: 10px;                        /* Arredondamento da borda */
+    padding: 10px;                              /* Margem interna */
     justify-content: center;                    /* Alinhamento horizontal dos elementos filhos */
     align-items: center;                        /* Alinhamento vertical dos elementos filhos */
 }
