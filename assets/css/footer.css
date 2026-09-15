@@ -25,7 +25,7 @@ footer .link-column h1{     /* Modifica a parte "h1" da "link-column" do "footer
     font: bold 12pt Arial;  /* Estilo do texto */
 }
 
-footer .divider{                        /* Modifica a parte "divider" do "footer" */
+footer .horizontal_divider{             /* Modifica a parte "divider" do "footer" */
     width: 95%;                         /* Largura da "div" */
     height: 1px;                        /* Altura da "div" */
     margin: 10px auto;                  /* Margem externa da "div" */

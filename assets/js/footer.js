@@ -2,4 +2,4 @@ async function loadComponents(id, file){                                        
     window.document.getElementById(id).innerHTML = await (await fetch(file)).text()    /* "await" faz o código esperar até que o "fetch()" e o ".text" retornem com o resultado */
 }
 
-loadComponents('footer-placeholder', '/components/footer.html')
+loadComponents('footer-placeholder', '/components/footer.html') /* Carrega o "footer" ao iniciar o programa */

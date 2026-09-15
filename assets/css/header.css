@@ -32,16 +32,23 @@ header div nav{         /* Modifica a parte "nav" da "div" do "header" */
     margin-left: auto;  /* Margem externa esquerda do "nav" [auto = utiliza todo o espaço disponivel] */
 }
 
-header div nav a{           /* Modifica a parte "a" da "nav" da "div" do"header" */
+header div nav a{           /* Modifica a parte "a" da "nav" da "div" do "header" */
     text-decoration: none;  /* Revome o sublinhado de link */
     font: bold 15pt Arial;  /* Estilo do texto */
     color: whitesmoke;    /* Cor do texto */          
     cursor: pointer;        /* Estilo do ponteiro do mouse */
 }
 
-header .divider{
+header .vertical_divider{               /* Modifica a classe "vertical_divider" do "header" */
     width: 1px;                         /* Largura da "div" */
     height: auto;                       /* Altura da "div" */
+    background-color: whitesmoke;     /* Cor de fundo */
+}
+
+header .horizontal_divider{             /* Modifica a classe "horizontal_divider" do "header" */
+    width: 90%;                         /* Largura da "div" */
+    height: 1px;                        /* Altura da "div" */
+    margin: 10px;                       /* Margem externa */
     background-color: whitesmoke;     /* Cor de fundo */
 }
 

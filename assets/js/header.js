@@ -3,17 +3,17 @@ async function loadComponents(id, file){                                        
 }
 
 function showMenu(id){
-    let element = window.document.getElementById(id)                     /* Encontra o elemento que foi clicado */
+    let element = window.document.getElementById(id)                        /* Encontra o elemento que foi clicado */
     
-    if (element.style.display == 'flex'){                                /* Comparação para saber se o menu está aberto */
-        element.style.display =  'none'                                  /* Caso esteja aberto o menu é fechado */
+    if (element.style.display == 'flex'){                                   /* Comparação para saber se o menu está aberto */
+        element.style.display =  'none'                                     /* Caso esteja aberto o menu é fechado */
     } else{
         for (let position of document.getElementsByClassName('submenu')){   /* Para cada posição do array da classe submenu... */
             position.style.display = 'none'                                 /* Fecha todos os menus abertos */
         }
 
-        element.style.display = 'flex'                                   /* Abre o menu que foi clicado */
+        element.style.display = 'flex'                                      /* Abre o menu que foi clicado */
     }
 }
 
-loadComponents('header-placeholder', '/components/header.html')
+loadComponents('header-placeholder', '/components/header.html') /* Carrega o "header" ao iniciar o programa */
