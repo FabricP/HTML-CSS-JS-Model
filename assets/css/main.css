@@ -1,0 +1,9 @@
+main{
+    background-color: rgba(0, 0, 0, 0.7);     /* Cor de fundo */
+    border-radius: 10px;                        /* Arredondamento da borda */
+    color: whitesmoke;                        /* Cor do texto */
+}
+
+main section{
+    display: flex;  /* Tipo de layout ([flex = flexbox] atributo que facilita a organização dos elementos filhos) */
+}
