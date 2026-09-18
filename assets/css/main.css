@@ -3,7 +3,3 @@ main{
     border-radius: 10px;                        /* Arredondamento da borda */
     color: whitesmoke;                        /* Cor do texto */
 }
-
-main section{
-    display: flex;  /* Tipo de layout ([flex = flexbox] atributo que facilita a organização dos elementos filhos) */
-}

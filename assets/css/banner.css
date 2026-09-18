@@ -1,11 +1,31 @@
-.banner{
+.banner-placeholder{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.banner img{
+.banner-placeholder img{    /* Modifica a parte "img" do "banner-placeholder" */
     border-radius: 10px;
-    width: 90vw;
-    height: 250px;
+    width: 95vw;
+    height: 30vh;
     background-color: red;
+}
+
+.banner-placeholder #radioButtons{
+    display: flex;
+}
+
+.banner-placeholder #radioButtons a{
+    display: flex;
+    user-select: none;
+    cursor: pointer;
+    font: bold 12pt Arial;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: black;
 }
